@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
-project(Demo VERSION 1.0)
+project(Demo VERSION 2.3)
 
-#configure_file(DemoConfig.h.in DemoConfig.h)
+configure_file(DemoConfig.h.in DemoConfig.h)
 
 set(CMAKE_CXX_STANDARD 17)
 
