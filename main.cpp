@@ -1,5 +1,5 @@
 #include <iostream>
-#include <adder.h>
+
 #include <GLFW/glfw3.h>
 #include "DemoConfig.h"
 //#include <boost/python.hpp>
@@ -7,11 +7,18 @@
 
 
 
+#ifdef USE_ADDER
+#include <adder.h>
+#endif
+
+
+
 
 int main(int argc, char* argv[]) {
     std::cout << "Hello, World!" << std::endl;
+#ifdef USE_ADDER
     std::cout << add(5.0f, 6.0f) << std::endl;
-
+#endif
     std::cout << argv[0] << " Version " << Demo_VERSION_MAJOR << "." << Demo_VERSION_MINOR << std::endl;
 
 
