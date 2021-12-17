@@ -1,14 +1,20 @@
 #include <iostream>
 #include <adder.h>
 #include <GLFW/glfw3.h>
+#include "DemoConfig.h"
 //#include <boost/python.hpp>
+#include "DemoConfig.h"
 
 
 
 
-int main() {
+int main(int argc, char* argv[]) {
     std::cout << "Hello, World!" << std::endl;
     std::cout << add(5.0f, 6.0f) << std::endl;
+
+    std::cout << argv[0] << " Version " << Demo_VERSION_MAJOR << "." << Demo_VERSION_MINOR << std::endl;
+
+
 
 
     GLFWwindow* window;
