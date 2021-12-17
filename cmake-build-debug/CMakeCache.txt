@@ -262,6 +262,9 @@ Demo_BINARY_DIR:STATIC=C:/Users/RTT-ThinkPad/Demo/cmake-build-debug
 //Value Computed by CMake
 Demo_SOURCE_DIR:STATIC=C:/Users/RTT-ThinkPad/Demo
 
+//No help, variable specified on the command line.
+GLFW_BUILD_DOCS:UNINITIALIZED=OFF
+
 //Path to a library.
 PYTHON_DEBUG_LIBRARY:FILEPATH=PYTHON_DEBUG_LIBRARY-NOTFOUND
 
